@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>AdminITS</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>Login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <description></description>
+    <display-name>CreateJobOpenings</display-name>
+    <servlet-name>CreateJobOpeningsController</servlet-name>
+    <servlet-class>com.Controller.CreateJobOpeningsController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>CreateJobOpeningsController</servlet-name>
+    <url-pattern>/CreateJobOpeningsController</url-pattern>
+   </servlet-mapping>
+  
+  <servlet>
+    <description></description>
+    <display-name>ScheduleInterview</display-name>
+    <servlet-name>InterviewProcessController</servlet-name>
+    <servlet-class>com.Controller.InterviewProcessController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>InterviewProcessController</servlet-name>
+    <url-pattern>/InterviewProcessController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLoginController</servlet-name>
+    <servlet-class>com.Controller.AdminLoginController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>AdminLoginController</servlet-name>
+    <url-pattern>/AdminLoginController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>AdminLogout</display-name>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <servlet-class>com.Controller.AdminLogoutServlet</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>AdminLogoutServlet</servlet-name>
+    <url-pattern>/AdminLogoutServlet</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>Feedback</display-name>
+    <servlet-name>FeedbackFormController</servlet-name>
+    <servlet-class>com.Controller.FeedbackFormController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>FeedbackFormController</servlet-name>
+    <url-pattern>/FeedbackFormController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <servlet-name>Mail</servlet-name>
+    <servlet-class>MailAppController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Mail</servlet-name>
+    <url-pattern>/Mail</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>MailApp</display-name>
+    <servlet-name>MailApp</servlet-name>
+    <servlet-class>com.Controller.MailAppController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MailApp</servlet-name>
+    <url-pattern>/MailApp</url-pattern>
+   </servlet-mapping>
+ 
+ <servlet>
+    <description></description>
+    <display-name>Checklist</display-name>
+    <servlet-name>ChecklistController</servlet-name>
+    <servlet-class>com.Controller.ChecklistController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>ChecklistController</servlet-name>
+    <url-pattern>/ChecklistController</url-pattern>
+   </servlet-mapping>
+ 
+   <servlet>
+    <description></description>
+    <display-name>RoundController</display-name>
+    <servlet-name>RoundController</servlet-name>
+    <servlet-class>com.Controller.RoundController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>RoundController</servlet-name>
+    <url-pattern>/RoundController</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+    <description></description>
+    <display-name>FeedbackRoundController</display-name>
+    <servlet-name>FeedbackRoundController</servlet-name>
+    <servlet-class>com.Controller.FeedbackRoundController</servlet-class>
+   </servlet>
+   <servlet-mapping>
+    <servlet-name>FeedbackRoundController</servlet-name>
+    <url-pattern>/FeedbackRoundController</url-pattern>
+   </servlet-mapping>
+ </web-app>
